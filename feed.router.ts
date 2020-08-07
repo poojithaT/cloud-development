@@ -32,10 +32,8 @@ router.get('/:id', async (req: Request, res: Response) => {
         requireAuth, 
         async (req: Request, res: Response) => {
             //@TODO try it yourself
-            res.send("not implemented")
-
+            res.send(500).send("not implemented")
     });
-
 // Get a signed url to put a new item in the bucket
 router.get('/signed-url/:fileName', 
     requireAuth, 
